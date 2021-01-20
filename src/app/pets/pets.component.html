@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h1>Pet Profile</h1>
+        </div>
+        <div class="card-body">
+          <form action="#">
+            <div class="row form-group">
+              <label class="col-form-label col-md-2" for="name">Pet name</label>
+              <div class="col-md-10">
+                <input class="form-control" type="text" name="name" id="name" (input)="setName($event)">
+              </div>
+            </div>
+            <div class="row form-group">
+              <label class="col-form-label col-md-2" for="image">Image</label>
+              <div class="col-md-10">
+                <input class="form-control" type="url" name="image" id="image" (change)="setImage($event)">
+              </div>
+            </div>
+          </form>
+        </div><!-- /.card-body -->
+      </div><!-- /.card -->
+    </div><!-- /.col-md-6 -->
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h2 [textContent]="name"></h2>
+        </div>
+        <div class="card-body">
+          <img [src]="image" class="img-fluid img-thumbnail" alt="Pet">
+        </div>
+      </div><!-- /.card -->
+    </div>
+  </div>
+
+</div>
