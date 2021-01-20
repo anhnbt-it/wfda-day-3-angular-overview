@@ -1,0 +1,19 @@
+<section>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Color Picker</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div>
+        <mat-label>Chọn màu</mat-label>
+        <input type="color" name="color" id="color" (change)="onChangeColor($event)">
+      </div>
+      <div>
+        Output:
+        <div [style.backgroundColor]="color">
+          {{color}}
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</section>

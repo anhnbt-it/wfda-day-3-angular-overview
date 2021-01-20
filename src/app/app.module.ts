@@ -16,6 +16,7 @@ import { ProductsComponent } from './products/products.component';
 import {FormsModule} from '@angular/forms';
 import { MessagesComponent } from './messages/messages.component';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { ColorPickerComponent } from './color-picker/color-picker.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CalculatorComponent } from './calculator/calculator.component';
     ProductDetailComponent,
     ProductsComponent,
     MessagesComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    ColorPickerComponent
   ],
   imports: [
     BrowserModule,
