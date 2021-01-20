@@ -15,6 +15,7 @@ import {MatTableModule} from '@angular/material/table';
 import { ProductsComponent } from './products/products.component';
 import {FormsModule} from '@angular/forms';
 import { MessagesComponent } from './messages/messages.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MessagesComponent } from './messages/messages.component';
     PetsComponent,
     ProductDetailComponent,
     ProductsComponent,
-    MessagesComponent
+    MessagesComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,

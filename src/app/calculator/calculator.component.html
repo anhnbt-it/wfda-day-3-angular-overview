@@ -1,0 +1,23 @@
+<section>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Calculator</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div>
+        <input size="5" type="number" placeholder="First number" name="firstNum" id="firstNum" [value]="firstNum" (change)="onFirstChange($event)">
+        <select name="operation" id="operation" [value]="operator" (change)="onSelectChange($event)">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+        <input size="5" type="number" placeholder="Second number" name="secondNum" id="secondNum" [value]="secondNum" (change)="onSecondChange($event)">
+      </div>
+      <div>
+        <button mat-raised-button color="primary" type="button" (click)="calculate()">Submit</button>
+      </div>
+      <div *ngIf="result >= 0">{{result}}</div>
+    </mat-card-content>
+  </mat-card>
+</section>
