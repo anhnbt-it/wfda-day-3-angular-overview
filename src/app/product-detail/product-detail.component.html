@@ -1,0 +1,28 @@
+<mat-card *ngIf="product">
+  <mat-card-title>{{product.name | uppercase }} details</mat-card-title>
+  <mat-card-content>
+    <form action="#">
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label [id]="product.id">Id</mat-label>
+          <input type="text" matInput placeholder="Name" [(ngModel)]="product.id" [name]="product.id" [id]="product.id"
+                 [value]="product.id" readonly>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label [id]="product.name">Name</mat-label>
+          <input type="text" matInput placeholder="Name" [(ngModel)]="product.name" [name]="product.name" [id]="product.name"
+                 [value]="product.name">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label [id]="product.price">Price</mat-label>
+          <input type="text" matInput placeholder="Name" [(ngModel)]="product.price" [name]="product.price"
+                 [id]="product.price" [value]="product.price">
+        </mat-form-field>
+      </p>
+    </form>
+  </mat-card-content>
+</mat-card>

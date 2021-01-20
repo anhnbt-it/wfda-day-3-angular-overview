@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {MatFormFieldAppearance} from '@angular/material/form-field';
 
 @Component({
   selector: 'app-pets',
@@ -9,6 +10,8 @@ export class PetsComponent implements OnInit {
 
   name = 'Poodle';
   image = '/assets/Dogs.jpeg';
+
+  @Input() appearance: MatFormFieldAppearance;
 
   constructor() { }
 
